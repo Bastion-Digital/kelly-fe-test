@@ -1,6 +1,9 @@
 const Card = ({ heading, description, img, linkText, linkUrl }) => {
 	return (
-		<div className='card'>
+		<a
+			href={linkUrl}
+			className='card'
+		>
 			<div className='card__image'>
 				<img
 					src={img}
@@ -16,7 +19,7 @@ const Card = ({ heading, description, img, linkText, linkUrl }) => {
 			>
 				{linkText}
 			</a>
-		</div>
+		</a>
 	);
 };
 
